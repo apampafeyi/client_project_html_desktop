@@ -1,0 +1,388 @@
+/* General Styles */
+body {
+    background-color: #fffef2;
+    color: #333;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Headings */
+h1 {
+    color: #00274C;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: #00274C;
+    text-align: center;
+    font-size: 1.5rem;
+    background-color: #FFCB05;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: #00274C;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+/* Skip to Main Content */
+.skip-link {
+    position: absolute;
+    left: -9999px;
+    top: -9999px;
+    background-color: #FFCB05;
+    color: #00274C;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.skip-link:focus {
+    left: 10px;
+    top: 10px;
+    z-index: 100;
+}
+
+/* Navigation */
+nav {
+    background-color: white;
+    border-bottom: 3px solid #00274C;
+    padding: 0.75rem;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+/* Mobile: Default */
+nav li {
+    padding: 5px 10px;
+    flex: 1 1 45%;
+    text-align: center;
+}
+
+nav a {
+    color: #00274C;
+    padding: 12px 15px;
+    font-size: 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    text-align: center;
+    white-space: nowrap;
+    display: inline-block;
+}
+
+nav a:hover,
+nav .active {
+    background-color: #00274C;
+    color: #FFCB05;
+    border: 2px solid #FFCB05;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+/* Images */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+.header-img {
+    display: block;
+    max-width: 80%;
+    margin: 20px auto;
+    padding: 10px;
+}
+
+.image-container {
+    text-align: center;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column
+}
+
+.image-container img {
+    width: auto;
+    height: 200%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+
+.advocacy-section {
+    display: grid;
+    gap: 20px;
+    ;
+}
+
+.image-container p {
+    margin-top: 10px;
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+}
+
+/* Bullet Points (Lists) */
+ul,
+ol {
+    padding-left: 25px;
+    margin-left: 15px;
+}
+
+li {
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
+
+/* Grid Layout */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.page-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #00274C;
+    color: #FFCB05;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: #FFCB05;
+    text-decoration: underline;
+}
+
+main {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #FFCB05;
+    color: #00274C;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.student-tips {
+    background-color: #FFCB05;
+    color: #00274C;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.student-tips h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.student-tips ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.student-tips li {
+    background-color: white;
+    color: #00274C;
+    border-radius: 5px;
+    padding: 10px;
+    flex: 1 1 200px;
+    font-size: 14px;
+    margin: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.quick-finder {
+    background-color: #FFCB05;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.quick-finder ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.quick-finder a {
+    color: #00274C;
+    text-decoration: none;
+    font-weight: bold;
+    border: 2px solid #00274C;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.quick-finder a:hover {
+    background-color: #00274C;
+    color: #FFCB05;
+}
+
+.tile-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin: 20px 0;
+    padding: 0 20px;
+}
+
+.tile {
+    background-color: #FFCB05;
+    /* UM Maize */
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #00274C;
+    /* UM Blue */
+    font-weight: bold;
+    display: block;
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover state: only on hover do we change color and scale */
+.tile:hover {
+    background-color: #00274C;
+    color: #FFCB05;
+    transform: scale(1.05);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+
+main ol {
+    padding-left: 20px;
+    margin: 10px auto;
+    max-width: 300px;
+    text-align: left;
+    list-style-position: inside;
+}
+
+main ol li {
+    margin-bottom: 8px;
+}
+
+main ol li::marker {
+    font-weight: bold;
+    color: #00274C;
+    /* Optional: UM Blue */
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h1,
+h2 {
+    animation: fadeInUp 0.8s ease forwards;
+}
+
+.tile-grid a {
+    animation: fadeInUp 1s ease forwards;
+}
+
+/* DESKTOP: Larger screens */
+@media (min-width: 600px) {
+    nav li {
+        flex: 0 1 auto;
+    }
+
+    .advocacy-section {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    nav ul {
+        flex-wrap: nowrap;
+    }
+
+    nav li {
+        flex: 1;
+    }
+
+    /* Student Tips: make all in one row */
+    .student-tips ul {
+        flex-wrap: nowrap;
+    }
+
+    /* Tile grid: make 4 tiles in one row */
+    .tile-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    /* Advocacy Section (on CEW page): already good, but let's be explicit */
+    .advocacy-section {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* Make the main content wider and cleaner */
+    main {
+        max-width: 1550px;
+        margin: 0 auto;
+        padding: 40px;
+    }
+
+    /* Footer spacing clean up */
+    footer {
+        padding: 2rem;
+    }
+}
